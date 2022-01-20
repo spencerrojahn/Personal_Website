@@ -1,0 +1,433 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Customr properties for my style */
+
+:root {
+    --ff-primary: 'Times New Roman', serif;
+    --ff-secondary: Georgia, serif;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --fs-h2: 1.4em;
+    --fs-h3: 1em;
+    --fs-body: 0.8em;
+    --fs-locations: 0.6em;
+    --fs-captions: 0.4em;
+    --fs-language: 0.7em;
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h2: 1.8em;
+        --fs-h3: 1.2em;
+        --fs-body: 1em;
+        --fs-locations: 0.8em;
+        --fs-captions: 0.4em;
+        --fs-language: 0.9em;
+    }
+}
+
+/* General styles */
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: var(--fs-body); 
+    background-color: #02316e;
+    color: white;
+    overflow-wrap: break-word;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header {
+    background-color: #333333;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.3);
+}
+
+footer {
+    text-align: right;
+    padding: 2.2em 2.8em; 
+    background-color: #333333;  
+    border-top: 1px solid rgba(211, 211, 211, 0.3);
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+    margin: 0;
+    color: white;
+}
+
+h3 { font-size: var(--fs-h3);}
+h2 { font-size: var(--fs-h2);}
+
+
+
+.container {
+    flex: 1 0 auto;
+}
+
+.nav {
+    background-color: #333333;
+    display: flex;
+    margin-left: 1.8em;
+    margin-right: 1.8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.nav__title {
+    width: 30%;
+    margin: auto;
+    padding: 1em;
+}
+
+.nav__title--text {
+    text-decoration: none;
+}
+
+.nav__selections {
+    width: 70%;
+    margin: auto;
+    
+}
+
+.nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+.nav__list--item {
+    float: right;
+}
+  
+.nav__list--link{
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
+  
+a.nav__list--link:hover {
+    background-color: #1d1d1d;
+    border-radius: 10px;
+}
+
+/* Body */
+
+.page {
+    display: flex;
+    margin: 0 1.4em;
+    padding: 2em 1.4em;
+    margin-bottom: 2em;
+}
+
+.page__contact-info {
+    width: 20%;
+    padding-right: 0.6em;
+}
+
+.page__contact-icon {
+    width: 100%;
+    align-items: center;
+}
+
+.page__link-icon {
+    width: auto;
+    max-width: 50%;
+    max-height: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.page__name {
+    color: lightgray;
+    margin: 0.8em 0;
+}
+
+.page__contact-locations {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page__contact-socials {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1.2em;
+}
+
+.page__contact-socials-item {
+    margin: 0.3em 0;
+    padding: 0.2em 0;
+    color: lightgray;
+    font-size: var(--fs-locations);
+    
+}
+
+.page__contact-locations-item,
+.page_content--cover-letter {
+    margin: 0.3em 0;
+    color: rgb(175, 175, 175);
+    font-size: var(--fs-locations);
+}
+
+.page__body {
+    width: 80%;
+    padding-left: 0.8em;
+
+}
+
+.page__content {
+    padding-left: 1em;
+}
+
+.page__content-title {
+    margin-bottom: 1.2em;
+}
+
+.page__content-about {
+    padding: 0.5em 0; 
+    line-height: 1.3em;
+}
+
+a.education__list-link:hover,
+a.cover_letter-link:hover {
+    color: lightgray;
+}
+
+.page__contact-locations--links {
+    margin-top: 2em;
+}
+
+a.page__contact-link:hover {
+    color: rgb(175, 175, 175);
+}
+
+a.social-link,
+.page__contact-socials-item--phone {
+    color: lightgray;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+a.social-link:hover {
+    text-decoration: underline;
+}
+
+.social-links-logo {
+    width: auto;
+    max-width: 1.4em;
+    height: auto;
+    border-radius: 2px;
+    margin-right: 0.7em;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+
+
+.education {
+    width: 100%;
+}
+
+.education__item {
+    width: 100%;
+    display: flex;
+}
+
+.education__item--Paly {
+    margin-top: 1.5em;
+}
+
+.education__text {
+    width: 50%;
+    padding-right: 1em;
+}
+
+.education__header {
+    display: flex;
+    align-items: center;
+}
+
+.education__logo {
+    width: auto;
+    max-width: 3em;
+    height: auto;
+    border-radius: 2px;
+    margin-right: 0.5em;
+}
+
+.education__logo--Paly {
+    border-radius: 100%;
+}
+
+.education__header-title {
+    line-height: 1.4em;
+}
+
+.education__dates {
+    margin: 0.3em 0;
+    color: lightgray;
+    font-size: var(--fs-locations);
+}
+
+.education__list {
+    padding-left: 1.8em;
+}
+
+.education__list-item {
+    margin: 0.3em 0;
+}
+
+.education__images {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.education__image {
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.education__fig {
+    height: auto;
+    margin: 0;
+    text-align: center;
+}
+
+.education__fig-parents {
+    width: 40%;
+}
+
+.education__fig-pitching {
+    width: 60%;
+} 
+
+.education__fig-grad {
+    width: 45%;
+}
+
+.education__fig-basketball {
+    width: 55%;
+} 
+
+.education__caption {
+    margin: 0.3em 0;
+    color: lightgray;
+    font-size: var(--fs-captions);
+    padding: 0 2em;
+}
+
+a.education__basketball-link {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+a.education__basketball-link:hover {
+    text-decoration: underline;
+}
+
+
+
+.work__dates {
+    margin: 0.3em 0;
+    color: lightgray;
+    font-size: var(--fs-locations);
+    text-align: right;
+    width: 30%;
+    padding-right: 1em;
+}
+
+.work__position {
+    margin-top: 0.3em;
+}
+
+.work__header {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.work__text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.work__gatorade {
+    padding-top: 1.5em;
+}
+
+.work__list {
+    padding-left: 1.8em;
+}
+
+
+
+.projects__list {
+    margin-top: 0.6em;
+    padding-left: 1.8em;
+}
+
+.projects__link {
+    text-decoration: none;
+}
+
+.projects__link:hover {
+    text-decoration: underline;
+    color: lightgray;
+}
+
+.projects__lang {
+    margin: 0.3em 0;
+    color: lightgray;
+    font-size: var(--fs-language);
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1em;
+}
+
+.project-multiple{
+    margin-top: 1.5em;
+}
+
+.projects__note {
+    margin-top: 2.5em;
+    color: lightgray;
+    font-size: var(--fs-language);
+}
+
+.note__link {
+    color: inherit;
+}
+
+.note__link:hover {
+    color: rgb(175, 175, 175);
+}
+
