@@ -193,6 +193,7 @@ a.nav__list--link:hover {
 
 .page__content {
     padding-left: 1em;
+    border: 1px solid red;                                /* border - need to remove */
 }
 
 .page__content-title {
@@ -245,6 +246,7 @@ a.social-link:hover {
 
 .education {
     width: 100%;
+    border: 1px solid pink;                                 /* border - need to remove */
 }
 
 .education__item {
@@ -430,4 +432,43 @@ a.education__basketball-link:hover {
 .note__link:hover {
     color: rgb(175, 175, 175);
 }
+
+
+
+
+.page__content-title--stock-project {
+    margin-bottom: 0.6em;
+    /* border-bottom: 1px solid; */
+}
+
+
+.project__lang--stock-project {
+    /* margin-bottom: 1em; */
+    /* font-size: var(--fs-language2); */
+    /* border: 1px solid; */
+    margin: 0;
+}
+
+.stock__project--details {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.page__content--stock {
+    display: flex;
+    flex-direction: column;
+}
+
+.stock__project--info {
+    /* border: 1px solid; */
+    margin-top: 0.4em; 
+}
+
+
+.ticker__input {
+    color: rgb(107, 107, 107);
+}
+
 
